@@ -119,7 +119,7 @@ const About = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-           LALALALALA oaloal
+           LALALALALA oaloal taska
           </Typography>
         </Toolbar>
       </AppBar>
