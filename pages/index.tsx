@@ -6,9 +6,11 @@ import Link from "next/link";
 import Router from "next/router";
 import Header from "../components/header";
 import Slider from "../components/slider";
+import SimpleCard from "../components/simpleCard";
+import image1 from "../public/assets/images/image-example.jpg";
+import image2 from "../public/assets/images/image-example1.jpg";
 
 const Home: NextPage = () => {
-
   return (
     <div>
       <Head>
@@ -19,11 +21,47 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <div className={styles.container}>
-        
       <Slider />
-      </div>
 
+      <div className={styles.container}>
+        <div className={styles.gallery}>
+          <SimpleCard
+            image={image1}
+            title="Ropa casual para damas"
+            path="/About"
+          />
+          <SimpleCard
+            image={image2}
+            title="Para ellos"
+            path="/About"
+          />
+          <SimpleCard
+            image={image1}
+            title="Ropa casual para damas"
+            path="/About"
+          />
+          <SimpleCard
+            image={image2}
+            title="Ropa casual para damas"
+            path="/About"
+          />
+                    <SimpleCard
+            image={image2}
+            title="Ropa casual para damas"
+            path="/About"
+          />
+          <SimpleCard
+            image={image1}
+            title="Ropa casual para damas"
+            path="/About"
+          />
+          <SimpleCard
+            image={image2}
+            title="Ropa casual para damas"
+            path="/About"
+          />
+        </div>
+      </div>
     </div>
   );
 };

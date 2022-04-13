@@ -1,0 +1,33 @@
+.card {
+  background: #232f3e;
+  color: #fff;
+  padding: 0 20px;
+  width: auto;
+  position: relative;
+  height: 100%;
+  grid-column: span 2;
+  /* margin-top: 20px; */
+  overflow-y: hidden;
+  cursor: pointer;
+}
+
+.title {
+  margin: 20px 0px 5px 0px;
+}
+
+.imageContent {
+  max-height: 280px;
+  position: relative;
+  height: 100%;
+}
+.footer a {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.footer a:hover {
+  text-decoration: underline;
+  color: #C7511F;
+}

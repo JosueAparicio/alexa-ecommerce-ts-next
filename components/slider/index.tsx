@@ -26,7 +26,7 @@ const Slider = () => {
         />
         <div className={styles.imgBox}>
           <div className={styles.imgContainer}>
-            <Image src={image1} className={styles.img} layout="fill" />
+            <Image src={image1} className={styles.img} layout="fill" alt="simple-card-image" />
           </div>
           <div className={styles.content}>
             <h2>Llena tu canasta de alegria</h2>
@@ -46,7 +46,7 @@ const Slider = () => {
         />
         <div className={styles.imgBox}>
           <div className={styles.imgContainer}>
-            <Image src={image2} className={styles.img} layout="fill" />
+            <Image src={image2} className={styles.img} layout="fill" alt="simple-card-image" />
           </div>
 
           <div className={styles.content}>
@@ -67,7 +67,7 @@ const Slider = () => {
         />
         <div className={styles.imgBox}>
           <div className={styles.imgContainer}>
-            <Image src={image3} className={styles.img} layout="fill" />
+            <Image src={image3} className={styles.img} layout="fill" alt="simple-card-image" />
           </div>
 
           <div className={styles.content}>
@@ -87,7 +87,7 @@ const Slider = () => {
         />
         <div className={styles.imgBox}>
           <div className={styles.imgContainer}>
-            <Image src={image4} className={styles.img} layout="fill" />
+            <Image src={image4} className={styles.img} layout="fill" alt="simple-card-image" />
           </div>
 
           <div className={styles.content}>
