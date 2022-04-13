@@ -5,12 +5,10 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Router from "next/router";
 import Header from "../components/header";
+import Slider from "../components/slider";
 
 const Home: NextPage = () => {
-  const router = Router;
-  const goToBack = () => {
-    router.back();
-  };
+
   return (
     <div>
       <Head>
@@ -20,6 +18,12 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
+
+      <div className={styles.container}>
+        
+      <Slider />
+      </div>
+
     </div>
   );
 };

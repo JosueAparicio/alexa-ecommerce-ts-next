@@ -225,7 +225,7 @@ const Header = () => {
           Lo mas vendido
         </Button>
         <Button size="small" color="inherit" sx={{ flexGrow: 1 }}>
-          Servicio al cliente
+          Descuentos
         </Button>
       </Box>
     </>
