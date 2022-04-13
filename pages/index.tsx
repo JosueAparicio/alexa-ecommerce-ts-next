@@ -9,6 +9,7 @@ import Slider from "../components/slider";
 import SimpleCard from "../components/simpleCard";
 import image1 from "../public/assets/images/image-example.jpg";
 import image2 from "../public/assets/images/image-example1.jpg";
+import Footer from "../components/footer";
 
 const Home: NextPage = () => {
   return (
@@ -30,11 +31,7 @@ const Home: NextPage = () => {
             title="Ropa casual para damas"
             path="/About"
           />
-          <SimpleCard
-            image={image2}
-            title="Para ellos"
-            path="/About"
-          />
+          <SimpleCard image={image2} title="Para ellos" path="/About" />
           <SimpleCard
             image={image1}
             title="Ropa casual para damas"
@@ -45,7 +42,7 @@ const Home: NextPage = () => {
             title="Ropa casual para damas"
             path="/About"
           />
-                    <SimpleCard
+          <SimpleCard
             image={image2}
             title="Ropa casual para damas"
             path="/About"
@@ -62,6 +59,7 @@ const Home: NextPage = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
