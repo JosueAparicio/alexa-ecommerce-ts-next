@@ -29,7 +29,7 @@ const Slider = () => {
             <Image src={image1} className={styles.img} layout="fill" />
           </div>
           <div className={styles.content}>
-            <h2>¡Encuentra lo que te gusta!</h2>
+            <h2>Llena tu canasta de alegria</h2>
             <p>
               Contamos una amplia variedad de ropa 100% americana para damas, caballeros y niños.
               Estamos seguros de que aqui encontraras lo que mas te gusta! 
