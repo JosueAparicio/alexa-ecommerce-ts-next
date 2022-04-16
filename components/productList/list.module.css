@@ -1,0 +1,83 @@
+.container {
+  background-color: #121212;
+  color: #fff;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-x: overlay;
+  margin-bottom: 20px;
+  height: min-content;
+}
+.item {
+  min-width: 250px;
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.5s ease;
+}
+
+.item:hover {
+  opacity: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0px 10px 0px;
+}
+
+.title {
+  margin: 0;
+}
+.header a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #007185;
+  font-size: 13.5px;
+}
+.header a:hover {
+  text-decoration: underline;
+  color: #c7511f;
+}
+
+.list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none;
+}
+.container:hover > .list::-webkit-scrollbar {
+  display: initial;
+}
+
+.list::-webkit-scrollbar:vertical {
+  width: 7px;
+}
+
+.list::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.list::-webkit-scrollbar:horizontal {
+  height: 7px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+}
+
+.list::-webkit-scrollbar-track {
+  border-radius: 10px;
+}

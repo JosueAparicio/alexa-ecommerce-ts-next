@@ -10,6 +10,7 @@ import SimpleCard from "../components/simpleCard";
 import image1 from "../public/assets/images/image-example.jpg";
 import image2 from "../public/assets/images/image-example1.jpg";
 import Footer from "../components/footer";
+import ProductList from "../components/productList";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,8 @@ const Home: NextPage = () => {
       <Slider />
 
       <div className={styles.container}>
+        <ProductList products={[]} title="Lo mas popular" />
+
         <div className={styles.gallery}>
           <SimpleCard
             image={image1}
@@ -58,6 +61,8 @@ const Home: NextPage = () => {
             path="/About"
           />
         </div>
+        <ProductList products={[]} title="Ofertas del dia" />
+        <ProductList products={[]} title="Lo nuevo en calzados" />
       </div>
       <Footer />
     </div>

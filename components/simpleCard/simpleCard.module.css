@@ -9,6 +9,10 @@
   /* margin-top: 20px; */
   overflow-y: hidden;
   cursor: pointer;
+
+}
+.card:hover > .imageContent{
+  opacity: 1;
 }
 
 .title {
@@ -19,6 +23,10 @@
   max-height: 280px;
   position: relative;
   height: 100%;
+  opacity: 0.6;
+  transition: all 0.5s ease;
+
+
 }
 .footer a {
   position: relative;
