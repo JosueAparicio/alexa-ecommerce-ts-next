@@ -32,7 +32,7 @@ const MenuDrawer: React.FC<Props> = ({ open, onClose, onOpen }) => {
           Hola, identificate
         </Typography>
       </Box>
-      <Box sx={{ width: 300, bgcolor: "background.paper" }} role="presentation" className={styles.body}>
+      <Box sx={{ width: 300}} role="presentation" className={styles.body}>
         <Typography
           variant="subtitle1"
           component="div"
