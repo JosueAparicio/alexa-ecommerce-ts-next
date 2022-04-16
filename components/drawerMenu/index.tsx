@@ -32,7 +32,7 @@ const MenuDrawer: React.FC<Props> = ({ open, onClose, onOpen }) => {
           Hola, identificate
         </Typography>
       </Box>
-      <Box sx={{ width: 300, bgcolor: "background.paper" }} role="presentation">
+      <Box sx={{ width: 300, bgcolor: "background.paper" }} role="presentation" className={styles.body}>
         <Typography
           variant="subtitle1"
           component="div"
@@ -44,7 +44,7 @@ const MenuDrawer: React.FC<Props> = ({ open, onClose, onOpen }) => {
           {["Carrito", "Lo mas vendido", "Ofertas del dia", "Descuentos"].map(
             (text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>
+                <ListItemIcon className={styles.icons}>
                   {index % 2 === 0 ? IconsMaterial.inbox : IconsMaterial.mail}
                 </ListItemIcon>
                 <ListItemText primary={text} />
@@ -64,7 +64,7 @@ const MenuDrawer: React.FC<Props> = ({ open, onClose, onOpen }) => {
           {["Ropa para caballero", "Ropa para dama", "Ropa para ninos"].map(
             (text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>
+                <ListItemIcon className={styles.icons}> 
                   {index % 2 === 0 ? IconsMaterial.inbox : IconsMaterial.mail}
                 </ListItemIcon>
                 <ListItemText primary={text} />
@@ -84,7 +84,7 @@ const MenuDrawer: React.FC<Props> = ({ open, onClose, onOpen }) => {
           {["Mi cuenta", "Servicio al cliente", "Acerca de"].map(
             (text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>
+                <ListItemIcon className={styles.icons}>
                   {index % 2 === 0 ? IconsMaterial.inbox : IconsMaterial.mail}
                 </ListItemIcon>
                 <ListItemText primary={text} />

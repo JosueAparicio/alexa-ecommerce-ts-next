@@ -2,20 +2,9 @@ import React from "react";
 import styles from "./list.module.css";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import ListSubheader from "@mui/material/ListSubheader";
 import IconButton from "@mui/material/IconButton";
-import InfoIcon from "@mui/icons-material/Info";
 import IconsMaterial from "../../commons/MaterialIcons";
-
-interface Product {
-  productName: string;
-  category: { id: string; name: string };
-  productId: string;
-  size: string;
-  color: string;
-  photoURL: string;
-  price: string;
-}
+import { Product } from "../../types";
 
 interface Props {
   products: Array<Product>;
@@ -28,7 +17,6 @@ const ProductList = ({ products, title }: Props) => {
       <div className={styles.header}>
         <h3 className={styles.title}>{title}</h3>
         <a href="#">Ver mas</a>
-
       </div>
       <div className={styles.list}>
         {itemData.map((item) => (
