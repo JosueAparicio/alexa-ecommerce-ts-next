@@ -44,7 +44,7 @@ const Footer = () => {
         <Divider className={styles.divider} />
 
         <div className={styles.copy}>
-          &copy; 2022, Alexia Venta de Ropa Americana o sus afiliados
+          &copy; 2022, Alexa Venta de Ropa Americana o sus afiliados
         </div>
       </div>
     </footer>

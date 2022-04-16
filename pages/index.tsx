@@ -1,16 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import Router from "next/router";
 import Header from "../components/header";
-import Slider from "../components/slider";
-import SimpleCard from "../components/simpleCard";
-import image1 from "../public/assets/images/image-example.jpg";
-import image2 from "../public/assets/images/image-example1.jpg";
 import Footer from "../components/footer";
-import ProductList from "../components/productList";
+import HomePage from "../views/Home";
 
 const Home: NextPage = () => {
   return (
@@ -22,48 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-
-      <Slider />
-
-      <div className={styles.container}>
-        <ProductList products={[]} title="Lo mas popular" />
-
-        <div className={styles.gallery}>
-          <SimpleCard
-            image={image1}
-            title="Ropa casual para damas"
-            path="/About"
-          />
-          <SimpleCard image={image2} title="Para ellos" path="/About" />
-          <SimpleCard
-            image={image1}
-            title="Ropa casual para damas"
-            path="/About"
-          />
-          <SimpleCard
-            image={image2}
-            title="Ropa casual para damas"
-            path="/About"
-          />
-          <SimpleCard
-            image={image2}
-            title="Ropa casual para damas"
-            path="/About"
-          />
-          <SimpleCard
-            image={image1}
-            title="Ropa casual para damas"
-            path="/About"
-          />
-          <SimpleCard
-            image={image2}
-            title="Ropa casual para damas"
-            path="/About"
-          />
-        </div>
-        <ProductList products={[]} title="Ofertas del dia" />
-        <ProductList products={[]} title="Lo nuevo en calzados" />
-      </div>
+      <HomePage />
       <Footer />
     </div>
   );

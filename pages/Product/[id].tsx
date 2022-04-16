@@ -1,13 +1,11 @@
-import React from "react";
-import { NextPage } from "next";
 import Head from "next/head";
-import Header from "../../components/header";
+import React from "react";
+import Container from "../../components/Container";
 import Footer from "../../components/footer";
-import AboutPage from "../../views/About";
+import Header from "../../components/header";
+import ProductPage from "../../views/Product";
 
-
-const About : NextPage= () => {
-
+const Product = () => {
   return (
     <div>
       <Head>
@@ -17,10 +15,12 @@ const About : NextPage= () => {
       </Head>
 
       <Header />
-        <AboutPage />
+      <Container>
+        <ProductPage />
+      </Container>
       <Footer />
     </div>
   );
 };
 
-export default About;
+export default Product;
